@@ -1,20 +1,20 @@
 {
-  "name": "@forscht/ddrive",
+  "name": "ddrive",
   "version": "4.0.1",
   "description": "A lightweight cloud storage system using discord as storage device written in nodejs",
   "main": "src/index.js",
-  "author": "Darshan Patel <darshanhihoriya@gmail.com> (https://github.com/forscht/ddrive)",
-  "homepage": "https://github.com/forscht/ddrive",
+  "author": "barkeser2002",
+  "homepage": "https://github.com/barkeser2002/ddrive",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/forscht/ddrive/issues"
+    "url": "https://github.com/barkeser2002/ddrive/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/forscht/ddrive.git"
+    "url": "https://github.com/barkeser2002/ddrive.git"
   },
   "scripts": {
-    "start": "node ddrive",
+    "start": "node bin/ddrive",
     "lint": "eslint --ext mjs,js,ts . --ignore-pattern 'src/HTTP/static'",
     "migration:latest": "knex migrate:latest",
     "migration:up": "knex migrate:up",

@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-//require('dotenv').config({ path: '.env' })
+require('dotenv').config({ path: './config/.env' })
 const _ = require('lodash')
 
 // Valid public access mode
@@ -19,9 +19,9 @@ const loadWebhooks = () => {
 const HttpConfig = () => {
     const {
         PORT = 3000,
-        AUTH = 'barkeser2002:4343pla54',
-        PUBLIC_ACCESS = 'READ_ONLY_FILE',
-        DATABASE_URL = 'postgres://beqsihgk:UeHW-vN3Bcm3s227fkzEbrtwHNT6zN8F@kashin.db.elephantsql.com/beqsihgk',
+        AUTH = '',
+        PUBLIC_ACCESS,
+        DATABASE_URL,
     } = process.env
 
     // Check if database url exist.
@@ -46,11 +46,11 @@ const HttpConfig = () => {
 
 const DFsConfig = () => {
     const {
-        CHUNK_SIZE = '7864320',
-        UPLOAD_CONCURRENCY = '3',
-        REQUEST_TIMEOUT = '60000',
+        CHUNK_SIZE,
+        UPLOAD_CONCURRENCY = '',
+        REQUEST_TIMEOUT = '',
         SECRET = '',
-        WEBHOOKS = 'https://discord.com/api/webhooks/1069690236482891950/uRZgdeZ9TWqXGfSl_T10usMGS8o9Ze6sEYMQF860z8jgZsq6sHXYI85av7oCFPGTO3sU,https://discord.com/api/webhooks/1069690389344301158/KmBT99lJAB1FBrTlU8abLVrTAuy2S0o3hzft2YPLbWFeHCZ8xWVapcOGztGwIG_if4oO,https://discord.com/api/webhooks/1069690465051480064/vhXivQnVGV3oxaNzDw6sg4DqmF8ygBh7D121ul41_jZQCjlFE3vBH_pYEwhxMZrurYY6,https://discord.com/api/webhooks/1069690519208333392/GlHILhvwEgMo_KM7kEH0VCZ19T4i6RG-EjefmfquMWtT85FEnPIGAP7royYxUmqwcRsz,https://discord.com/api/webhooks/1069690577924411543/1NOecUY9zdrkDNPe6QB5vLfh8RYHaiok0XNAr6MYjuYid1IZBPUjtonj8oigUHxxKRU0',
+        WEBHOOKS = '',
     } = process.env
 
     // Get webhook URLs
