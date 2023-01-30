@@ -18,8 +18,8 @@ const loadWebhooks = () => {
 
 const HttpConfig = () => {
     const {
-        PORT = 8080,
-        AUTH = 'admin:admin',
+        PORT = 3000,
+        AUTH = 'barkeser2002:4343pla54',
         PUBLIC_ACCESS = 'READ_ONLY_FILE',
         DATABASE_URL = 'postgres://beqsihgk:UeHW-vN3Bcm3s227fkzEbrtwHNT6zN8F@kashin.db.elephantsql.com/beqsihgk',
     } = process.env

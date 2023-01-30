@@ -1,5 +1,5 @@
 const config = require('./config')()
-const { DFs, HttpServer } = require('../src')
+const { DFs, HttpServer } = require('./src/index.js')
 
 const startApp = async () => {
     const { DFsConfig, httpConfig } = config

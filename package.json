@@ -14,7 +14,7 @@
     "url": "https://github.com/forscht/ddrive.git"
   },
   "scripts": {
-    "start": "node bin/ddrive",
+    "start": "node ddrive",
     "lint": "eslint --ext mjs,js,ts . --ignore-pattern 'src/HTTP/static'",
     "migration:latest": "knex migrate:latest",
     "migration:up": "knex migrate:up",
