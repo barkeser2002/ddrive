@@ -1,1 +1,1 @@
-web: ./bin/ddrive.js
+web: bin/ddrive
